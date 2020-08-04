@@ -1,0 +1,6 @@
+framework module Pods_ScoBees_UIKitTests {
+  umbrella header "Pods-ScoBees-UIKitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

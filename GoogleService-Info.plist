@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>416648111508-327ukaa5np34envcv8pc015ui8io9iqp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.416648111508-327ukaa5np34envcv8pc015ui8io9iqp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDAMfMfJL2D4rw55f9MvS_o63uTVu-sRUo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>416648111508</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ScoBees-UIKit</string>
+	<key>PROJECT_ID</key>
+	<string>scobees-279d2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>scobees-279d2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:416648111508:ios:1dcb5d2db78cb96a3b5b81</string>
+	<key>DATABASE_URL</key>
+	<string>https://scobees-279d2.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D68BBC4419D0F9DE63B4955 /* Pods_ScoBees_UIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948956E897AA5EDBB616DFD6 /* Pods_ScoBees_UIKitTests.framework */; };
+		3215566124D934670063BF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215566024D934670063BF8B /* AppDelegate.swift */; };
+		3215566324D934670063BF8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215566224D934670063BF8B /* SceneDelegate.swift */; };
+		3215566524D934670063BF8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215566424D934670063BF8B /* ContentView.swift */; };
+		3215566724D934680063BF8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3215566624D934680063BF8B /* Assets.xcassets */; };
+		3215566A24D934680063BF8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3215566924D934680063BF8B /* Preview Assets.xcassets */; };
+		3215566D24D934680063BF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3215566B24D934680063BF8B /* LaunchScreen.storyboard */; };
+		3215567824D934680063BF8B /* ScoBees_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215567724D934680063BF8B /* ScoBees_UIKitTests.swift */; };
+		3215568324D934680063BF8B /* ScoBees_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215568224D934680063BF8B /* ScoBees_UIKitUITests.swift */; };
+		3215569124D935E40063BF8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3215569024D935E40063BF8B /* GoogleService-Info.plist */; };
+		3215569424D9361C0063BF8B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3215569324D9361C0063BF8B /* SwiftPackageProductDependency */; };
+		9177EA44DEF725F066ACB8FE /* Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E56D1C85D0C744D1508300 /* Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework */; };
+		D5B2D0B0D39BEDF99872DBEA /* Pods_ScoBees_UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF3847D8D46FEBCCB9EB8EF /* Pods_ScoBees_UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3215567424D934680063BF8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3215565524D934670063BF8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3215565C24D934670063BF8B;
+			remoteInfo = "ScoBees-UIKit";
+		};
+		3215567F24D934680063BF8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3215565524D934670063BF8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3215565C24D934670063BF8B;
+			remoteInfo = "ScoBees-UIKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3215565D24D934670063BF8B /* ScoBees-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScoBees-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3215566024D934670063BF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3215566224D934670063BF8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3215566424D934670063BF8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3215566624D934680063BF8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3215566924D934680063BF8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3215566C24D934680063BF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3215566E24D934680063BF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3215567324D934680063BF8B /* ScoBees-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScoBees-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3215567724D934680063BF8B /* ScoBees_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoBees_UIKitTests.swift; sourceTree = "<group>"; };
+		3215567924D934680063BF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3215567E24D934680063BF8B /* ScoBees-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScoBees-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3215568224D934680063BF8B /* ScoBees_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoBees_UIKitUITests.swift; sourceTree = "<group>"; };
+		3215568424D934680063BF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3215569024D935E40063BF8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		68591DAB2B15F396FB24D3D0 /* Pods-ScoBees-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKit.release.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKit/Pods-ScoBees-UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		8CF3847D8D46FEBCCB9EB8EF /* Pods_ScoBees_UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoBees_UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC9120848B0C2DD8F5BB45B /* Pods-ScoBees-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKit.debug.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKit/Pods-ScoBees-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		948956E897AA5EDBB616DFD6 /* Pods_ScoBees_UIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoBees_UIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E56D1C85D0C744D1508300 /* Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCD41661A982CAED30E7675 /* Pods-ScoBees-UIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKitTests/Pods-ScoBees-UIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F15490BEC19549BF6FE32DC4 /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKit-ScoBees-UIKitUITests.release.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKit-ScoBees-UIKitUITests/Pods-ScoBees-UIKit-ScoBees-UIKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7664DCF0F832CA6A75B10F7 /* Pods-ScoBees-UIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKitTests.release.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKitTests/Pods-ScoBees-UIKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF525D2354A81F4B324623BA /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoBees-UIKit-ScoBees-UIKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ScoBees-UIKit-ScoBees-UIKitUITests/Pods-ScoBees-UIKit-ScoBees-UIKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3215565A24D934670063BF8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3215569424D9361C0063BF8B /* BuildFile in Frameworks */,
+				D5B2D0B0D39BEDF99872DBEA /* Pods_ScoBees_UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215567024D934680063BF8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D68BBC4419D0F9DE63B4955 /* Pods_ScoBees_UIKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215567B24D934680063BF8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9177EA44DEF725F066ACB8FE /* Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3215565424D934670063BF8B = {
+			isa = PBXGroup;
+			children = (
+				3215565F24D934670063BF8B /* ScoBees-UIKit */,
+				3215567624D934680063BF8B /* ScoBees-UIKitTests */,
+				3215568124D934680063BF8B /* ScoBees-UIKitUITests */,
+				3215565E24D934670063BF8B /* Products */,
+				F759A17199A8ADFD708D4211 /* Pods */,
+				9E06C32C226CC20C7C71CA0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3215565E24D934670063BF8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3215565D24D934670063BF8B /* ScoBees-UIKit.app */,
+				3215567324D934680063BF8B /* ScoBees-UIKitTests.xctest */,
+				3215567E24D934680063BF8B /* ScoBees-UIKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3215565F24D934670063BF8B /* ScoBees-UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3215566024D934670063BF8B /* AppDelegate.swift */,
+				3215569024D935E40063BF8B /* GoogleService-Info.plist */,
+				3215566224D934670063BF8B /* SceneDelegate.swift */,
+				3215566424D934670063BF8B /* ContentView.swift */,
+				3215566624D934680063BF8B /* Assets.xcassets */,
+				3215566B24D934680063BF8B /* LaunchScreen.storyboard */,
+				3215566E24D934680063BF8B /* Info.plist */,
+				3215566824D934680063BF8B /* Preview Content */,
+			);
+			path = "ScoBees-UIKit";
+			sourceTree = "<group>";
+		};
+		3215566824D934680063BF8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3215566924D934680063BF8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3215567624D934680063BF8B /* ScoBees-UIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3215567724D934680063BF8B /* ScoBees_UIKitTests.swift */,
+				3215567924D934680063BF8B /* Info.plist */,
+			);
+			path = "ScoBees-UIKitTests";
+			sourceTree = "<group>";
+		};
+		3215568124D934680063BF8B /* ScoBees-UIKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3215568224D934680063BF8B /* ScoBees_UIKitUITests.swift */,
+				3215568424D934680063BF8B /* Info.plist */,
+			);
+			path = "ScoBees-UIKitUITests";
+			sourceTree = "<group>";
+		};
+		9E06C32C226CC20C7C71CA0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF3847D8D46FEBCCB9EB8EF /* Pods_ScoBees_UIKit.framework */,
+				C3E56D1C85D0C744D1508300 /* Pods_ScoBees_UIKit_ScoBees_UIKitUITests.framework */,
+				948956E897AA5EDBB616DFD6 /* Pods_ScoBees_UIKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F759A17199A8ADFD708D4211 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC9120848B0C2DD8F5BB45B /* Pods-ScoBees-UIKit.debug.xcconfig */,
+				68591DAB2B15F396FB24D3D0 /* Pods-ScoBees-UIKit.release.xcconfig */,
+				FF525D2354A81F4B324623BA /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.debug.xcconfig */,
+				F15490BEC19549BF6FE32DC4 /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.release.xcconfig */,
+				CDCD41661A982CAED30E7675 /* Pods-ScoBees-UIKitTests.debug.xcconfig */,
+				F7664DCF0F832CA6A75B10F7 /* Pods-ScoBees-UIKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3215565C24D934670063BF8B /* ScoBees-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3215568724D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKit" */;
+			buildPhases = (
+				F686DE8E56D73B53E3118357 /* [CP] Check Pods Manifest.lock */,
+				3215565924D934670063BF8B /* Sources */,
+				3215565A24D934670063BF8B /* Frameworks */,
+				3215565B24D934670063BF8B /* Resources */,
+				CBD91B3EB88B99583BCA6401 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ScoBees-UIKit";
+			packageProductDependencies = (
+				3215569324D9361C0063BF8B /* SwiftPackageProductDependency */,
+			);
+			productName = "ScoBees-UIKit";
+			productReference = 3215565D24D934670063BF8B /* ScoBees-UIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3215567224D934680063BF8B /* ScoBees-UIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3215568A24D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKitTests" */;
+			buildPhases = (
+				47490EE2C08748CE85C5A637 /* [CP] Check Pods Manifest.lock */,
+				3215566F24D934680063BF8B /* Sources */,
+				3215567024D934680063BF8B /* Frameworks */,
+				3215567124D934680063BF8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3215567524D934680063BF8B /* PBXTargetDependency */,
+			);
+			name = "ScoBees-UIKitTests";
+			productName = "ScoBees-UIKitTests";
+			productReference = 3215567324D934680063BF8B /* ScoBees-UIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3215567D24D934680063BF8B /* ScoBees-UIKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3215568D24D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKitUITests" */;
+			buildPhases = (
+				0C156A0384043296671813DE /* [CP] Check Pods Manifest.lock */,
+				3215567A24D934680063BF8B /* Sources */,
+				3215567B24D934680063BF8B /* Frameworks */,
+				3215567C24D934680063BF8B /* Resources */,
+				A2FBCC0B18847F7E41C1BC28 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3215568024D934680063BF8B /* PBXTargetDependency */,
+			);
+			name = "ScoBees-UIKitUITests";
+			productName = "ScoBees-UIKitUITests";
+			productReference = 3215567E24D934680063BF8B /* ScoBees-UIKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3215565524D934670063BF8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3215565C24D934670063BF8B = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3215567224D934680063BF8B = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 3215565C24D934670063BF8B;
+					};
+					3215567D24D934680063BF8B = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 3215565C24D934670063BF8B;
+					};
+				};
+			};
+			buildConfigurationList = 3215565824D934670063BF8B /* Build configuration list for PBXProject "ScoBees-UIKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3215565424D934670063BF8B;
+			packageReferences = (
+				3215569224D9361C0063BF8B /* RemoteSwiftPackageReference */,
+			);
+			productRefGroup = 3215565E24D934670063BF8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3215565C24D934670063BF8B /* ScoBees-UIKit */,
+				3215567224D934680063BF8B /* ScoBees-UIKitTests */,
+				3215567D24D934680063BF8B /* ScoBees-UIKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3215565B24D934670063BF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3215566D24D934680063BF8B /* LaunchScreen.storyboard in Resources */,
+				3215566A24D934680063BF8B /* Preview Assets.xcassets in Resources */,
+				3215566724D934680063BF8B /* Assets.xcassets in Resources */,
+				3215569124D935E40063BF8B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215567124D934680063BF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215567C24D934680063BF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C156A0384043296671813DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoBees-UIKit-ScoBees-UIKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47490EE2C08748CE85C5A637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoBees-UIKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FBCC0B18847F7E41C1BC28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit-ScoBees-UIKitUITests/Pods-ScoBees-UIKit-ScoBees-UIKitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit-ScoBees-UIKitUITests/Pods-ScoBees-UIKit-ScoBees-UIKitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit-ScoBees-UIKitUITests/Pods-ScoBees-UIKit-ScoBees-UIKitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD91B3EB88B99583BCA6401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit/Pods-ScoBees-UIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit/Pods-ScoBees-UIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScoBees-UIKit/Pods-ScoBees-UIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F686DE8E56D73B53E3118357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScoBees-UIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3215565924D934670063BF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3215566124D934670063BF8B /* AppDelegate.swift in Sources */,
+				3215566324D934670063BF8B /* SceneDelegate.swift in Sources */,
+				3215566524D934670063BF8B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215566F24D934680063BF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3215567824D934680063BF8B /* ScoBees_UIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3215567A24D934680063BF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3215568324D934680063BF8B /* ScoBees_UIKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3215567524D934680063BF8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3215565C24D934670063BF8B /* ScoBees-UIKit */;
+			targetProxy = 3215567424D934680063BF8B /* PBXContainerItemProxy */;
+		};
+		3215568024D934680063BF8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3215565C24D934670063BF8B /* ScoBees-UIKit */;
+			targetProxy = 3215567F24D934680063BF8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3215566B24D934680063BF8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3215566C24D934680063BF8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3215568524D934680063BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3215568624D934680063BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3215568824D934680063BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC9120848B0C2DD8F5BB45B /* Pods-ScoBees-UIKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoBees-UIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ScoBees-UIKit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3215568924D934680063BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68591DAB2B15F396FB24D3D0 /* Pods-ScoBees-UIKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ScoBees-UIKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ScoBees-UIKit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3215568B24D934680063BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCD41661A982CAED30E7675 /* Pods-ScoBees-UIKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				INFOPLIST_FILE = "ScoBees-UIKitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoBees-UIKit.app/ScoBees-UIKit";
+			};
+			name = Debug;
+		};
+		3215568C24D934680063BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7664DCF0F832CA6A75B10F7 /* Pods-ScoBees-UIKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				INFOPLIST_FILE = "ScoBees-UIKitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoBees-UIKit.app/ScoBees-UIKit";
+			};
+			name = Release;
+		};
+		3215568E24D934680063BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF525D2354A81F4B324623BA /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				INFOPLIST_FILE = "ScoBees-UIKitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ScoBees-UIKit";
+			};
+			name = Debug;
+		};
+		3215568F24D934680063BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15490BEC19549BF6FE32DC4 /* Pods-ScoBees-UIKit-ScoBees-UIKitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57XXBJZK9C;
+				INFOPLIST_FILE = "ScoBees-UIKitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ScoBees-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ScoBees-UIKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3215565824D934670063BF8B /* Build configuration list for PBXProject "ScoBees-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3215568524D934680063BF8B /* Debug */,
+				3215568624D934680063BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3215568724D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3215568824D934680063BF8B /* Debug */,
+				3215568924D934680063BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3215568A24D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3215568B24D934680063BF8B /* Debug */,
+				3215568C24D934680063BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3215568D24D934680063BF8B /* Build configuration list for PBXNativeTarget "ScoBees-UIKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3215568E24D934680063BF8B /* Debug */,
+				3215568F24D934680063BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3215569224D9361C0063BF8B /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3215569324D9361C0063BF8B /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3215569224D9361C0063BF8B /* RemoteSwiftPackageReference */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3215565524D934670063BF8B /* Project object */;
+}
