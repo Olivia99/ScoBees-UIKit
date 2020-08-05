@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!").padding()
+        BrewsData()
     }
+    
+   
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -18,3 +21,32 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+struct Home: View {
+    
+    var body : some View{
+        Text("hello")
+        
+    }
+    
+}
+
+//class getBrewsData: ObservedObject {
+//    @Published var brewData = [Brews]()
+//
+//    init(){
+//
+//    }
+//
+//}
+//
+//struct Brews : Identifiable {
+//    var name : String
+//    var startDate : Date
+//    var endDate: Date
+//    var pic : String
+//}
+//
+
