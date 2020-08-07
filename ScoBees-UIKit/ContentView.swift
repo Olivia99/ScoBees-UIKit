@@ -10,10 +10,53 @@ import Firebase
 
 struct ContentView: View {
     var body: some View {
-        BrewsData()
+        
+        
+        TabView {
+            NavigationView {
+                BrewDetails()
+            }
+            .tabItem {
+                Image(systemName: "doc.text")
+                Text("Discover")
+            }
+            
+            NavigationView {
+                BrewDetails()
+            }
+            
+            .tabItem {
+                Image(systemName: "cart")
+                Text("Shop")
+                
+            }
+            
+            NavigationView {
+                BrewsData()
+            }
+            .tabItem {
+                Image(systemName: "clock")
+                Text("Brews")
+            }
+            
+            
+            NavigationView {
+                BrewsData()
+            }
+            .tabItem {
+                Image(systemName: "person.crop.circle")
+                Text("Profile")
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+        
     }
-    
-   
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -21,58 +21,63 @@ struct BrewsData: View {
     @State var showSheet = false
     
     var body: some View {
-        Text("Brew Data")
         
-        
-        if self.brews.datas.count != 0 {
-        
-            ScrollView(.vertical, showsIndicators: true) {
-                VStack(spacing: 10) {
-                    
-                    ForEach(self.brews.datas){i in
-                        
-                        BrewCellView(data: i)
-                        
-                    }
-                   
-                }
-            }
+            if self.brews.datas.count != 0 {
             
-        }
-        
-        
-        Button(action: {
-            addInfo(brewName: self.brewName, image: self.image, startDate: self.startDate, FTime: self.FTime)
-        }, label: {
-            Text("Add Brew")
-        })
-        
-        Button(action: {
-            self.showSheet = true
-        })
-        {
-            Text("Edit Brew")
-        }.sheet(isPresented: self.$showSheet) {
-           Text("Editing Brew")
-            Button(action:{
-                // will put update here
-                
-                
-                
-                self.showSheet = true
-                
-            }){
-                Text("Update Brew")
+                ScrollView(.vertical, showsIndicators: true) {
+                    VStack(spacing: 10) {
+                        
+                        ForEach(self.brews.datas){i in
+                            
+                            BrewCellView(data: i)
+                            
+                        }
+                       
+                    }
+                } .navigationBarTitle(Text("My Brews"))
                 
             }
-        }
+        
+        
+            
+//
+//            Button(action: {
+//                addInfo(brewName: self.brewName, image: self.image, startDate: self.startDate, FTime: self.FTime)
+//            }, label: {
+//                Text("Add Brew")
+//            })
+//
+//            Button(action: {
+//                self.showSheet = true
+//            })
+//            {
+//                Text("Edit Brew")
+//            }.sheet(isPresented: self.$showSheet) {
+//               Text("Editing Brew")
+//                Button(action:{
+//                    // will put update here
+//
+//
+//
+//                    self.showSheet = true
+//
+//                }){
+//                    Text("Update Brew")
+//
+//                }
+//            }
+            
+            
+        
+
     }
     
-    func addInfo(brewName: String, image: String, startDate : String, FTime: String){
-        
-        let db = Firestore.firestore()
-        db.collection("Brews").document().setData(["brewName": brewName, "image": image, "startDate" :startDate , "FTime": FTime])
-    }
+//    func addInfo(brewName: String, image: String, startDate : String, FTime: String){
+//
+//        let db = Firestore.firestore()
+//        db.collection("Brews").document().setData(["brewName": brewName, "image": image, "startDate" :startDate , "FTime": FTime])
+//    }
+    
 }
 
 struct BrewsData_Previews: PreviewProvider {
@@ -134,30 +139,32 @@ struct Brews : Identifiable {
 struct BrewCellView : View{
     var data : Brews
     var body: some View{
-        HStack (spacing:20){
-            Image(data.pic)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 65, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack (spacing:20){
+                Image(data.pic)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 65, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 
-            VStack (alignment: .leading) {
-                Text(data.brewName)
-                    .font(.headline)
-                    .foregroundColor(.primary)
-                    .padding(.bottom, 5)
-                HStack (spacing: 3) {
-                    Text("Ready by")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                    Text(data.endDate)
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                }.padding(.bottom,5)
-               
-                ProgressBar()
-            }
-            
-            Spacer()
-        }.padding()
+                VStack (alignment: .leading) {
+                    Text(data.brewName)
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                        .padding(.bottom, 5)
+                    HStack (spacing: 3) {
+                        Text("Ready by")
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                        Text(data.endDate)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                    }.padding(.bottom,5)
+                   
+                    ProgressBar()
+                }
+                
+                Spacer()
+            }.padding()
+        }
     }
 }
