@@ -11,30 +11,52 @@ import SDWebImage
 
 struct BrewsData: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var brews = getBrewsData()
     
-    @State var brewName = "Green Tea Batch"
-    @State var image = "icon"
-    @State var startDate = "07-29-2020"
-    @State var FTime = "15"
+//
+//    @State var brewName = "Green Tea Batch"
+//    @State var image = "icon"
+//    @State var startDate = "07-29-2020"
+//    @State var FTime = "15"
     
     @State var showSheet = false
     
+    
     var body: some View {
         
-            if self.brews.datas.count != 0 {
-            
+      if self.brews.datas.count != 0 {
+                
                 ScrollView(.vertical, showsIndicators: true) {
                     VStack(spacing: 10) {
-                        
-                        ForEach(self.brews.datas){i in
-                            
-                            BrewCellView(data: i)
-                            
-                        }
                        
+      
+                        
+                        
+                            ForEach(self.brews.datas){i in
+
+                         
+                                NavigationLink(destination: BrewDetails(data: i)){
+                                    BrewCellView(data: i)
+                
+                                }
+//                                .onTapGesture {
+//                                    self.showSheet.toggle()
+//
+//                                }
+                        }
                     }
-                } .navigationBarTitle(Text("My Brews"))
+                                                          
+                }
+                .sheet(isPresented: self.$showSheet) {
+//                    BrewDetails(data: i)
+                }
+                .navigationBarTitle(Text("My Brews"), displayMode: .large )
+                .navigationBarItems(trailing: Button(action: {
+                    self.showSheet.toggle()
+                }, label: {
+                    Image("plus")
+                }))
                 
             }
         
@@ -138,6 +160,8 @@ struct Brews : Identifiable {
 
 struct BrewCellView : View{
     var data : Brews
+    @State var show = false
+    
     var body: some View{
         VStack {
             HStack (spacing:20){

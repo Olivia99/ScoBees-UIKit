@@ -9,17 +9,44 @@ import SwiftUI
 
 struct BrewDetails: View {
     
-//    var brew : Brews
-    
-    @ObservedObject var brews = getBrewsData()
+   var data : Brews
     
     var body: some View {
-        
-        
-        
+      
         ScrollView {
             
-            batchImageView()
+            //batch images
+            HStack(alignment: .top){
+                
+                Spacer()
+                VStack {
+                    Image(data.pic)
+                    Text("Tap to add a photo")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                }
+                .frame(width:320)
+                .overlay(
+                    
+                    VStack {
+                        Image("brewIcon")
+                            .resizable()
+                            .frame(width: 60, height: 60, alignment: .topLeading)
+                        Text("Top View")
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                    },
+                    alignment: .topLeading)
+                
+                
+                Spacer()
+            }
+            .padding(.top, 30)
+            .padding(.bottom, 30)
+            .background(Color(#colorLiteral(red: 1, green: 0.9215686275, blue: 0.8470588235, alpha: 1)).opacity(0.2))
+            
+            
+        //article card
             
             HStack {
                 Spacer()
@@ -30,12 +57,56 @@ struct BrewDetails: View {
             .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             
             
-            Date()
-            Ingredients()
+            
+            //Date section
+            VStack (alignment:.leading)  {
+                sectionTitle(text: "Date")
+                
+                
+                VStack(alignment: .trailing) {
+                    HStack() {
+                        Text("3/20")
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        Text("days")
+                            .font(.footnote)
+                    }
+                    ProgressBar()
+                }.padding(.vertical, 20)
+                
+            }
+            .padding(.horizontal, 30)
+            .padding(.vertical, 15)
+            
+           
+            
+            // Ingredients
+            VStack {
+                sectionTitle(text: "Ingredients")
+                
+                LazyVGrid(columns: [GridItem(), GridItem()], spacing: 45) {
+                    
+                    
+                    Ingredient(image: "water", color: Color(#colorLiteral(red: 0.8941176471, green: 0.9764705882, blue: 1, alpha: 1)), num: "5", unit: "L", ingredient: "Water")
+                    
+                    Ingredient(image: "sugar", color: Color(#colorLiteral(red: 1, green: 0.9803921569, blue: 0.8745098039, alpha: 1)), num: "50", unit: "g", ingredient: "Sugar")
+                    
+                    Ingredient(image: "tea", color: Color(#colorLiteral(red: 0.9333333333, green: 1, blue: 0.9411764706, alpha: 1)), num: "8", unit: "tbag", ingredient: "Base Tea")
+                    
+                    Ingredient(image: "jar", color: Color(#colorLiteral(red: 1, green: 0.9725490196, blue: 0.9450980392, alpha: 1)), num: "50", unit: "ml", ingredient: "Starter Tea")
+                    
+                    
+                }
+                .padding(.vertical, 20)
+                
+            }.padding(.horizontal, 30)
+            .padding(.vertical, 15)
+
+            
+            //Note
             Note(note: "")
             
         }
-        .navigationTitle("Brew")
+        .navigationTitle(data.brewName)
         
         
         
@@ -46,7 +117,7 @@ struct BrewDetails: View {
 
 struct BrewDetails_Previews: PreviewProvider {
     static var previews: some View {
-        BrewDetails()
+        BrewDetails(data: Brews(id: "s", brewName: "Name", pic: "brewIcon", endDate: "02"))
     }
 }
 
@@ -65,90 +136,10 @@ struct sectionTitle: View {
 
 
 
-struct batchImageView: View {
-    var body: some View {
-        HStack(alignment: .top){
-            
-            Spacer()
-            VStack {
-                Image("brewJar")
-                Text("Tap to add a photo")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-            }
-            .frame(width:320)
-            .overlay(
-                
-                VStack {
-                    Image("brewIcon")
-                        .resizable()
-                        .frame(width: 60, height: 60, alignment: .topLeading)
-                    Text("Top View")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                },
-                alignment: .topLeading)
-            
-            
-            Spacer()
-        }
-        .padding(.top, 30)
-        .padding(.bottom, 30)
-        .background(Color(#colorLiteral(red: 1, green: 0.9215686275, blue: 0.8470588235, alpha: 1)).opacity(0.2))
-    }
-}
-
-
-
-struct Date: View {
-    var body: some View {
-        VStack (alignment:.leading)  {
-            sectionTitle(text: "Date")
-            
-            
-            VStack(alignment: .trailing) {
-                HStack() {
-                    Text("3/20")
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    Text("days")
-                        .font(.footnote)
-                }
-                ProgressBar()
-            }.padding(.vertical, 20)
-            
-        }
-        .padding(.horizontal, 30)
-        .padding(.vertical, 15)
-    }
-}
 
 
 
 
-struct Ingredients: View {
-    var body: some View {
-        VStack {
-            sectionTitle(text: "Ingredients")
-            
-            LazyVGrid(columns: [GridItem(), GridItem()], spacing: 45) {
-                
-                
-                Ingredient(image: "water", color: Color(#colorLiteral(red: 0.8941176471, green: 0.9764705882, blue: 1, alpha: 1)), num: "5", unit: "L", ingredient: "Water")
-                
-                Ingredient(image: "sugar", color: Color(#colorLiteral(red: 1, green: 0.9803921569, blue: 0.8745098039, alpha: 1)), num: "50", unit: "g", ingredient: "Sugar")
-                
-                Ingredient(image: "tea", color: Color(#colorLiteral(red: 0.9333333333, green: 1, blue: 0.9411764706, alpha: 1)), num: "8", unit: "tbag", ingredient: "Base Tea")
-                
-                Ingredient(image: "jar", color: Color(#colorLiteral(red: 1, green: 0.9725490196, blue: 0.9450980392, alpha: 1)), num: "50", unit: "ml", ingredient: "Starter Tea")
-                
-                
-            }
-            .padding(.vertical, 20)
-            
-        }.padding(.horizontal, 30)
-        .padding(.vertical, 15)
-    }
-}
 
 
 struct Note : View{

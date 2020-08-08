@@ -9,12 +9,14 @@ import SwiftUI
 import Firebase
 
 struct ContentView: View {
+
     var body: some View {
-        
+       
         
         TabView {
             NavigationView {
-                BrewDetails()
+             
+                  Text("Discover View")
             }
             .tabItem {
                 Image(systemName: "doc.text")
@@ -22,7 +24,7 @@ struct ContentView: View {
             }
             
             NavigationView {
-                BrewDetails()
+                Text("Shop")
             }
             
             .tabItem {
