@@ -48,7 +48,7 @@ struct BrewsData: View {
             .sheet(isPresented: self.$showSheet) {
                 //                    BrewDetails(data: i)
                 
-                EditBrew()
+//                EditBrew(data: i)
             }
             .navigationBarTitle(Text("My Brews"), displayMode: .large )
             .navigationBarItems(trailing: Button(action: {
@@ -126,8 +126,16 @@ class getBrewsData : ObservableObject {
                 let brewName = i.document.get("brewName") as! String
                 let pic = i.document.get("pic") as! String
                 let endDate = i.document.get("endDate") as! String
+                let water = i.document.get("water") as! String
+                let waterUnit = i.document.get("waterUnit") as! String
+                let sugar = i.document.get("sugar") as! String
+                let sugarUnit = i.document.get("sugarUnit") as! String
+                let starterTea = i.document.get("starterTea") as! String
+                let starterTeaUnit = i.document.get("starterTeaUnit") as! String
+                let tea = i.document.get("tea") as! String
+                let teaUnit = i.document.get("teaUnit") as! String
                 
-                self.datas.append(Brews(id: id, brewName: brewName, pic: pic, endDate: endDate))
+                self.datas.append(Brews(id: id, brewName: brewName, pic: pic, endDate: endDate, starterTea: starterTea, starterTeaUnit: starterTeaUnit, sugar: sugar, sugarUnit: sugarUnit, tea: tea, teaUnit: teaUnit, water: water, waterUnit: waterUnit))
             }
         }
         
@@ -145,14 +153,14 @@ struct Brews : Identifiable {
     
     //
     //    var startDate : Date
-    //    var starterTea : String
-    //    var starterTeaUnit : String
-    //    var sugar : String
-    //    var sugarUnit : String
-    //    var tea : String
-    //    var teaUnit : String
-    //    var water : String
-    //    var waterUnit : String
+        var starterTea : String
+        var starterTeaUnit : String
+        var sugar : String
+        var sugarUnit : String
+        var tea : String
+        var teaUnit : String
+        var water : String
+        var waterUnit : String
     
 }
 

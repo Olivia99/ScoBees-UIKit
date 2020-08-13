@@ -11,16 +11,21 @@ struct EditBrew: View {
     
     @Environment(\.presentationMode) private var presentationMode
     
+    var data : Brews
+    
     @State var startDate = Date()
     @State var endDate = Date()
     @State var selection = 1
-    @State var brewName = "Brew name"
+    @State var brewName = ""
     
     @State var water = "0"
     @State var waterUnit = ["fl oz", "ml", "L"]
     
+    
     var dates = ["Start Date", "Brewing Dyas", "Finish Date" ]
     var body: some View {
+        
+        
         NavigationView {
             Form {
                 
@@ -31,7 +36,7 @@ struct EditBrew: View {
                         .padding(.bottom, 10)
                     
                     HStack {
-                        TextField("brewName", text: $brewName)
+                        TextField(data.brewName, text: $brewName)
                             .background(Color.white)
                     }
                     .textfieldStyle()
@@ -109,11 +114,11 @@ struct EditBrew: View {
     }
 }
 
-struct EditBrew_Previews: PreviewProvider {
-    static var previews: some View {
-        EditBrew()
-    }
-}
+//struct EditBrew_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditBrew(data: Brews)
+//    }
+//}
 
 
 
