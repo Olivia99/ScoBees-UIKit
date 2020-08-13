@@ -78,6 +78,9 @@ struct Home: View {
     
 }
 
+
+
+
 //class getBrewsData: ObservedObject {
 //    @Published var brewData = [Brews]()
 //

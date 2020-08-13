@@ -18,6 +18,10 @@
 		3215568324D934680063BF8B /* ScoBees_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215568224D934680063BF8B /* ScoBees_UIKitUITests.swift */; };
 		3215569124D935E40063BF8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3215569024D935E40063BF8B /* GoogleService-Info.plist */; };
 		3215569424D9361C0063BF8B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3215569324D9361C0063BF8B /* SDWebImageSwiftUI */; };
+		3244F7A424E4A29F00A5A8D6 /* EditBrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244F7A324E4A29F00A5A8D6 /* EditBrew.swift */; };
+		3244F7A724E4A44D00A5A8D6 /* ViewPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244F7A624E4A44D00A5A8D6 /* ViewPadding.swift */; };
+		3244F7A924E4BE7A00A5A8D6 /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244F7A824E4BE7A00A5A8D6 /* Textfield.swift */; };
+		3244F7AB24E4D25C00A5A8D6 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3244F7AA24E4D25C00A5A8D6 /* NavigationBarStyle.swift */; };
 		3276ECD724DA72B50092CE89 /* BrewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276ECD624DA72B50092CE89 /* BrewsData.swift */; };
 		3276ECDB24DA81820092CE89 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276ECDA24DA81820092CE89 /* ProgressBar.swift */; };
 		32A6094724DBDFF800C9B951 /* BrewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6094624DBDFF800C9B951 /* BrewDetails.swift */; };
@@ -60,6 +64,10 @@
 		3215568224D934680063BF8B /* ScoBees_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoBees_UIKitUITests.swift; sourceTree = "<group>"; };
 		3215568424D934680063BF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3215569024D935E40063BF8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3244F7A324E4A29F00A5A8D6 /* EditBrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBrew.swift; sourceTree = "<group>"; };
+		3244F7A624E4A44D00A5A8D6 /* ViewPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPadding.swift; sourceTree = "<group>"; };
+		3244F7A824E4BE7A00A5A8D6 /* Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
+		3244F7AA24E4D25C00A5A8D6 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
 		3276ECD624DA72B50092CE89 /* BrewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewsData.swift; sourceTree = "<group>"; };
 		3276ECDA24DA81820092CE89 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		32A6094624DBDFF800C9B951 /* BrewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDetails.swift; sourceTree = "<group>"; };
@@ -130,13 +138,13 @@
 		3215565F24D934670063BF8B /* ScoBees-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3244F7A524E4A43500A5A8D6 /* Helper */,
 				32A6094824DBE77500C9B951 /* Model */,
+				3276ECD624DA72B50092CE89 /* BrewsData.swift */,
 				3215566024D934670063BF8B /* AppDelegate.swift */,
 				3215569024D935E40063BF8B /* GoogleService-Info.plist */,
 				3215566224D934670063BF8B /* SceneDelegate.swift */,
 				3215566424D934670063BF8B /* ContentView.swift */,
-				3276ECD624DA72B50092CE89 /* BrewsData.swift */,
-				32A6094624DBDFF800C9B951 /* BrewDetails.swift */,
 				3215566624D934680063BF8B /* Assets.xcassets */,
 				3215566B24D934680063BF8B /* LaunchScreen.storyboard */,
 				3215566E24D934680063BF8B /* Info.plist */,
@@ -171,12 +179,24 @@
 			path = "ScoBees-UIKitUITests";
 			sourceTree = "<group>";
 		};
+		3244F7A524E4A43500A5A8D6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3244F7A624E4A44D00A5A8D6 /* ViewPadding.swift */,
+				3244F7A824E4BE7A00A5A8D6 /* Textfield.swift */,
+				3244F7AA24E4D25C00A5A8D6 /* NavigationBarStyle.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		32A6094824DBE77500C9B951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				32A6094924DBE79700C9B951 /* articleCard.swift */,
 				3276ECDA24DA81820092CE89 /* ProgressBar.swift */,
 				32A6094B24DCF60100C9B951 /* Ingredient.swift */,
+				3244F7A324E4A29F00A5A8D6 /* EditBrew.swift */,
+				32A6094624DBDFF800C9B951 /* BrewDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -450,12 +470,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A6094A24DBE79700C9B951 /* articleCard.swift in Sources */,
+				3244F7AB24E4D25C00A5A8D6 /* NavigationBarStyle.swift in Sources */,
+				3244F7A924E4BE7A00A5A8D6 /* Textfield.swift in Sources */,
+				3244F7A424E4A29F00A5A8D6 /* EditBrew.swift in Sources */,
 				32A6094724DBDFF800C9B951 /* BrewDetails.swift in Sources */,
 				3215566124D934670063BF8B /* AppDelegate.swift in Sources */,
 				3215566324D934670063BF8B /* SceneDelegate.swift in Sources */,
 				32A6094C24DCF60100C9B951 /* Ingredient.swift in Sources */,
 				3215566524D934670063BF8B /* ContentView.swift in Sources */,
 				3276ECDB24DA81820092CE89 /* ProgressBar.swift in Sources */,
+				3244F7A724E4A44D00A5A8D6 /* ViewPadding.swift in Sources */,
 				3276ECD724DA72B50092CE89 /* BrewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

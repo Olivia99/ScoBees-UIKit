@@ -14,91 +14,90 @@ struct BrewsData: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var brews = getBrewsData()
     
-//
-//    @State var brewName = "Green Tea Batch"
-//    @State var image = "icon"
-//    @State var startDate = "07-29-2020"
-//    @State var FTime = "15"
+    //
+    //    @State var brewName = "Green Tea Batch"
+    //    @State var image = "icon"
+    //    @State var startDate = "07-29-2020"
+    //    @State var FTime = "15"
     
     @State var showSheet = false
     
     
     var body: some View {
         
-      if self.brews.datas.count != 0 {
-                
-                ScrollView(.vertical, showsIndicators: true) {
-                    VStack(spacing: 10) {
-                       
-      
+        if self.brews.datas.count != 0 {
+            
+            ScrollView(.vertical, showsIndicators: true) {
+                VStack(spacing: 10) {
+                    
+                    
+                    
+                    
+                    ForEach(self.brews.datas){i in
                         
                         
-                            ForEach(self.brews.datas){i in
-
-                         
-                                NavigationLink(destination: BrewDetails(data: i)){
-                                    BrewCellView(data: i)
-                
-                                }
-//                                .onTapGesture {
-//                                    self.showSheet.toggle()
-//
-//                                }
+                        NavigationLink(destination: BrewDetails(data: i)){
+                            BrewCellView(data: i)
+                            
                         }
+                      
                     }
-                                                          
                 }
-                .sheet(isPresented: self.$showSheet) {
-//                    BrewDetails(data: i)
-                }
-                .navigationBarTitle(Text("My Brews"), displayMode: .large )
-                .navigationBarItems(trailing: Button(action: {
-                    self.showSheet.toggle()
-                }, label: {
-                    Image("plus")
-                }))
                 
             }
+            .sheet(isPresented: self.$showSheet) {
+                //                    BrewDetails(data: i)
+                
+                EditBrew()
+            }
+            .navigationBarTitle(Text("My Brews"), displayMode: .large )
+            .navigationBarItems(trailing: Button(action: {
+                self.showSheet.toggle()
+            }, label: {
+                Image("plus")
+            }))
+            
+        }
         
         
-            
-//
-//            Button(action: {
-//                addInfo(brewName: self.brewName, image: self.image, startDate: self.startDate, FTime: self.FTime)
-//            }, label: {
-//                Text("Add Brew")
-//            })
-//
-//            Button(action: {
-//                self.showSheet = true
-//            })
-//            {
-//                Text("Edit Brew")
-//            }.sheet(isPresented: self.$showSheet) {
-//               Text("Editing Brew")
-//                Button(action:{
-//                    // will put update here
-//
-//
-//
-//                    self.showSheet = true
-//
-//                }){
-//                    Text("Update Brew")
-//
-//                }
-//            }
-            
-            
         
-
+        //
+        //            Button(action: {
+        //                addInfo(brewName: self.brewName, image: self.image, startDate: self.startDate, FTime: self.FTime)
+        //            }, label: {
+        //                Text("Add Brew")
+        //            })
+        //
+        //            Button(action: {
+        //                self.showSheet = true
+        //            })
+        //            {
+        //                Text("Edit Brew")
+        //            }.sheet(isPresented: self.$showSheet) {
+        //               Text("Editing Brew")
+        //                Button(action:{
+        //                    // will put update here
+        //
+        //
+        //
+        //                    self.showSheet = true
+        //
+        //                }){
+        //                    Text("Update Brew")
+        //
+        //                }
+        //            }
+        
+        
+        
+        
     }
     
-//    func addInfo(brewName: String, image: String, startDate : String, FTime: String){
-//
-//        let db = Firestore.firestore()
-//        db.collection("Brews").document().setData(["brewName": brewName, "image": image, "startDate" :startDate , "FTime": FTime])
-//    }
+    //    func addInfo(brewName: String, image: String, startDate : String, FTime: String){
+    //
+    //        let db = Firestore.firestore()
+    //        db.collection("Brews").document().setData(["brewName": brewName, "image": image, "startDate" :startDate , "FTime": FTime])
+    //    }
     
 }
 
@@ -144,16 +143,16 @@ struct Brews : Identifiable {
     var pic : String
     var endDate : String
     
-//
-//    var startDate : Date
-//    var starterTea : String
-//    var starterTeaUnit : String
-//    var sugar : String
-//    var sugarUnit : String
-//    var tea : String
-//    var teaUnit : String
-//    var water : String
-//    var waterUnit : String
+    //
+    //    var startDate : Date
+    //    var starterTea : String
+    //    var starterTeaUnit : String
+    //    var sugar : String
+    //    var sugarUnit : String
+    //    var tea : String
+    //    var teaUnit : String
+    //    var water : String
+    //    var waterUnit : String
     
 }
 
@@ -169,7 +168,7 @@ struct BrewCellView : View{
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 65, height: 65, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-
+                
                 VStack (alignment: .leading) {
                     Text(data.brewName)
                         .font(.headline)
@@ -183,7 +182,7 @@ struct BrewCellView : View{
                             .font(.footnote)
                             .foregroundColor(.secondary)
                     }.padding(.bottom,5)
-                   
+                    
                     ProgressBar()
                 }
                 
