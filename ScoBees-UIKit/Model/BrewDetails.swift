@@ -86,14 +86,23 @@ struct BrewDetails: View {
                     
                     LazyVGrid(columns: [GridItem(), GridItem()], spacing: 45) {
                         
+//
+//                        Ingredient(image: "water", color: Color(#colorLiteral(red: 0.8941176471, green: 0.9764705882, blue: 1, alpha: 1)), num: data.water, unit: data.waterUnit, ingredient: "Water")
+//
+//                        Ingredient(image: "sugar", color: Color(#colorLiteral(red: 1, green: 0.9803921569, blue: 0.8745098039, alpha: 1)), num: data.sugar, unit: data.sugarUnit, ingredient: "Sugar")
+//
+//                        Ingredient(image: "tea", color: Color(#colorLiteral(red: 0.9333333333, green: 1, blue: 0.9411764706, alpha: 1)), num: data.tea, unit: data.teaUnit, ingredient: "Base Tea")
+//
+//                        Ingredient(image: "jar", color: Color(#colorLiteral(red: 1, green: 0.9725490196, blue: 0.9450980392, alpha: 1)), num: data.starterTea, unit: data.starterTeaUnit, ingredient: "Starter Tea")
                         
-                        Ingredient(image: "water", color: Color(#colorLiteral(red: 0.8941176471, green: 0.9764705882, blue: 1, alpha: 1)), num: data.water, unit: data.waterUnit, ingredient: "Water")
+                        Ingredient(image: "water", color: Color(#colorLiteral(red: 0.8941176471, green: 0.9764705882, blue: 1, alpha: 1)), num: "50", unit:"L", ingredient: "Water")
                         
-                        Ingredient(image: "sugar", color: Color(#colorLiteral(red: 1, green: 0.9803921569, blue: 0.8745098039, alpha: 1)), num: data.sugar, unit: data.sugarUnit, ingredient: "Sugar")
+                        Ingredient(image: "sugar", color: Color(#colorLiteral(red: 1, green: 0.9803921569, blue: 0.8745098039, alpha: 1)), num: "120", unit: "L", ingredient: "Sugar")
                         
-                        Ingredient(image: "tea", color: Color(#colorLiteral(red: 0.9333333333, green: 1, blue: 0.9411764706, alpha: 1)), num: data.tea, unit: data.teaUnit, ingredient: "Base Tea")
+                        Ingredient(image: "tea", color: Color(#colorLiteral(red: 0.9333333333, green: 1, blue: 0.9411764706, alpha: 1)), num: "8", unit: "tbag", ingredient: "Base Tea")
                         
-                        Ingredient(image: "jar", color: Color(#colorLiteral(red: 1, green: 0.9725490196, blue: 0.9450980392, alpha: 1)), num: data.starterTea, unit: data.starterTeaUnit, ingredient: "Starter Tea")
+                        Ingredient(image: "jar", color: Color(#colorLiteral(red: 1, green: 0.9725490196, blue: 0.9450980392, alpha: 1)), num: "4", unit: "L", ingredient: "Starter Tea")
+                        
                         
                         
                     }

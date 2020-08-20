@@ -125,7 +125,7 @@ class getBrewsData : ObservableObject {
                 let id = i.document.documentID
                 let brewName = i.document.get("brewName") as! String
                 let pic = i.document.get("pic") as! String
-                let endDate = i.document.get("endDate") as! String
+                let endDate = i.document.get("endDate") as! String;
                 let water = i.document.get("water") as! String
                 let waterUnit = i.document.get("waterUnit") as! String
                 let sugar = i.document.get("sugar") as! String
